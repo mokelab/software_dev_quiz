@@ -59,3 +59,47 @@ func main() {
 }
 ```
 
+## 3 基本型
+
+基本型ぐらいは調べずさっと型名が言えたほうがいいと思う。。。
+
+3-1 ビルドターゲットは32bitシステムである。64ビット符号付き整数な変数 `num` を定義したい。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var num [ 空欄 ] = 123456789012
+	fmt.Printf("num=%d\n", num)
+}
+
+```
+
+3-2 倍精度浮動小数点型の変数 `pi` を作りたい。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// https://pkg.go.dev/math
+	var pi [ 空欄 ] = 3.14159265358979323846264338327950288419716939937510582097494459
+	fmt.Printf("pi=%f\n", pi)
+}
+```
+
+3-3 空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var b [ 空欄 ] = false
+	fmt.Printf("b=%t\n", b)
+}
+```
