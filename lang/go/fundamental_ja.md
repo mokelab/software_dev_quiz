@@ -45,3 +45,17 @@ func main() {
 	fmt.Printf("a=%d\n", a)
 }
 ```
+
+2-3 定数 `url` を作りたい。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	[ 空欄 ] url = "https://mokelab.com/ja"
+	fmt.Printf("url=%s\n", url)
+}
+```
+
