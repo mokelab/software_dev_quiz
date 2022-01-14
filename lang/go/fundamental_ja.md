@@ -9,7 +9,7 @@ package main
 
 import "fmt"
 
-[空欄] {
+[ 空欄 ] {
 	fmt.Println("Hello Go World!")
 }
 ```
@@ -18,3 +18,30 @@ import "fmt"
 
 ## 2 変数や定数
 
+
+2-1 `int` 型の変数 `a` を作り、それに1848を代入して表示するGoプログラムにしたい。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	[ 空欄 ]
+	a = 1848
+	fmt.Printf("a=%d\n", a)
+}
+```
+
+2-2 2-1 のプログラムは1行減らすことができる。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	a [空欄] 1848
+	fmt.Printf("a=%d\n", a)
+}
+```
