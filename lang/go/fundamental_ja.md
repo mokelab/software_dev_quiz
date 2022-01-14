@@ -103,3 +103,18 @@ func main() {
 	fmt.Printf("b=%t\n", b)
 }
 ```
+
+3-4 `10 / 3` の整数部分だけを取り出したい。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	f := 10 / 3
+	var a int = [ 空欄 ] // fの整数部分だけ取り出したい
+	fmt.Printf("a=%d\n", a)
+}
+```
+
