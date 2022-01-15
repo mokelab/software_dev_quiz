@@ -298,3 +298,38 @@ func main() {
 	fmt.Printf("a=%d b=%d sum=%d\n", a, b, sum)
 }
 ```
+
+## 6 関数を定義する
+
+6-1 整数をひとつ受け取り、1加えた整数値を結果として返す関数 `add1` を作りたい。空欄にいれるものは？
+
+```go
+package main
+
+import "fmt"
+
+func add1(v int) [ 空欄1 ] {
+	[ 空欄2 ] v + 1
+}
+
+func main() {
+	nextValue := add1(1005)
+	fmt.Println(nextValue)
+}
+```
+
+6-2 6-1を無名関数を作る例に書き換えてみた。空欄にいれるものは？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	add1 := [ 空欄 ] {
+		return v + 1
+	}
+	nextValue := add1(1005)
+	fmt.Println(nextValue)
+}
+```
