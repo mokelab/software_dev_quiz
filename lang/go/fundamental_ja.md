@@ -216,3 +216,24 @@ func main() {
 	fmt.Printf("%d 月は %d 日まであるよ", month, day)
 }
 ```
+
+4-5 4-2を書き換えてみた。空欄には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// 出典：リングフィットアドベンチャー「アドベンチャーモード」
+	w := 41
+	[ 空欄 ] {
+	case w <= 23:
+		fmt.Println("1週目")
+	case w <= 46:
+		fmt.Println("2週目")
+	default:
+		fmt.Println("3週目")
+	}
+}
+```
