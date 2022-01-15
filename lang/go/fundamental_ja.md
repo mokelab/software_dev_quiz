@@ -237,3 +237,64 @@ func main() {
 	}
 }
 ```
+
+## 5 繰り返し
+
+5-1 1から10まで順に表示するGoプログラムにしたい。空欄に入れるものは？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	[ 空欄1 ] i := 1; [ 空欄2 ] ; i++ {
+		fmt.Println(i)
+	}
+}
+```
+
+5-2 合計(sum)が `1000` を超えるまで繰り返すGoプログラムにしたい。空欄にいれるものは？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	a := 1
+	b := 1
+	sum := 0
+	[ 空欄 ] sum < 1000 {
+		sum += b
+		c := a + b
+		a = b
+		b = c
+	}
+	fmt.Printf("a=%d b=%d sum=%d\n", a, b, sum)
+}
+```
+
+5-3 5-2 を書き換え、繰り返し終了の条件をループ中に移動させてみた。空欄にいれるものは？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	a := 1
+	b := 1
+	sum := 0
+	[ 空欄 ] {
+		if sum >= 1000 {
+			break
+		}
+		sum += b
+		c := a + b
+		a = b
+		b = c
+	}
+	fmt.Printf("a=%d b=%d sum=%d\n", a, b, sum)
+}
+```
