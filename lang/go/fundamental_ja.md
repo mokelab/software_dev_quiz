@@ -1,5 +1,7 @@
 # Goの基礎的なやつ
 
+※空欄には「何も記述しない」ケースもあります。
+
 ## 1 Hello world
 
 1-1 以下は `main.go` ファイルである。 `go run main.go` で実行すると `Hello Go World!` と表示されるGoプログラムとなるよう、空欄には何をいれる？
@@ -158,3 +160,59 @@ func main() {
 }
 ```
 
+4-3 変数 `hand` はジャンケンの手を表す変数である。空欄1と空欄2には何をいれる？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	hand := 1
+	[ 空欄1 ] {
+	case 0:
+		fmt.Println("グー")
+		[ 空欄2]
+	case 1:
+		fmt.Println("チョキ")
+		[ 空欄2]
+	case 2:
+		fmt.Println("パー")
+		[ 空欄2]
+	default:
+		fmt.Println("その手はなに？")
+		[ 空欄2]
+	}
+}
+```
+
+4-4 モケラさんは指定した月が何日あるかを表示するGoプログラムを書いた。ビルドはできたようである。問題点がなければ「問題なし」と解答し、問題点があるようであればその点を指摘してください。
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	month := 1 // 1-12とする
+	var day int
+	switch month {
+	case 1: // 1月
+	case 3: // 3月
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		day = 31
+	case 2:
+		day = 29 // 29日が選択肢にあれば大丈夫やろ。。。
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		day = 30
+	}
+	fmt.Printf("%d 月は %d 日まであるよ", month, day)
+}
+```
