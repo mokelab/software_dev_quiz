@@ -333,3 +333,30 @@ func main() {
 	fmt.Println(nextValue)
 }
 ```
+
+6-3 負の数が渡されたらエラーを返す関数にアップグレードした。空欄には何をいれる？
+
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+)
+
+func add1(v int) [ 空欄 ] {
+	if v < 0 {
+		return 0, errors.New("v must not be negative")
+	}
+	return v + 1, nil
+}
+
+func main() {
+	nextValue, err := add1(1005)
+	if err != nil {
+		fmt.Errorf("Failed to add: %w\n", err)
+		return
+	}
+	fmt.Println(nextValue)
+}
+```
