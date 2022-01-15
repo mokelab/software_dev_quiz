@@ -354,7 +354,7 @@ func add1(v int) [ 空欄 ] {
 func main() {
 	nextValue, err := add1(1005)
 	if err != nil {
-		fmt.Errorf("Failed to add: %w\n", err)
+		fmt.Printf("Failed to add: %w\n", err)
 		return
 	}
 	fmt.Println(nextValue)
